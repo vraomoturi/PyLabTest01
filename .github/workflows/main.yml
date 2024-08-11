@@ -1,4 +1,4 @@
-name: GitHub Self-Updating Repository Demo - Main  
+name: Simple test 01  
 on:
     workflow_dispatch:
   
