@@ -16,7 +16,7 @@ jobs:
           cat README2.md
       - name: Create grype configuration
         run: |
-          cat <<EOF > $HOME/.grype.yaml
+          cat <<EOF > test.txt
           ignore:
             # False positive, see https://github.com/anchore/grype/issues/558
             - vulnerability: CVE-2015-5237
