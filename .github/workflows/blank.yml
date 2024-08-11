@@ -1,4 +1,4 @@
-name: Repo-Self-Updateg-Demo
+name: Repo-Self-Updateg-Demo-02
 
 on:
   workflow_dispatch:
