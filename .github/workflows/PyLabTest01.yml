@@ -22,6 +22,9 @@ name: Push-To-PyLabTest01
 
 on:
   workflow_dispatch:
+
+permissions:
+  contents: write
   
 jobs:
   build:
