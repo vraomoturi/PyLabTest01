@@ -54,7 +54,7 @@ jobs:
         git config --local user.name "vraomoturi"
         git add PyLabTest01.txt
         git commit -m "Documentation update"
-        git push https://$USERNAME:$REPO_KEY@github.com/vraomoturi/PyLabTest01.git@main
+        git push https://$USERNAME:$REPO_KEY@github.com/vraomoturi/PyLabTest01.git
       env:
         REPO_KEY: ${{secrets.PUSH_TOKEN}}
         USERNAME: vraomoturi
