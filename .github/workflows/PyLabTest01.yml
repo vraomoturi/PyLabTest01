@@ -46,8 +46,8 @@ jobs:
             EOF
     - name: Publish documentation
       run: |
-        git config --local user.email "vraomoturi@yahoo.com"
-        git config --local user.name "vraomoturi"
+        git config --global user.email "vraomoturi@yahoo.com"
+        git config --global user.name "vraomoturi"
         git add test.txt
         git commit -m "Documentation update"
         git push https://$USERNAME:$REPO_KEY@github.com/vraomoturi/PyLabTest01.git
