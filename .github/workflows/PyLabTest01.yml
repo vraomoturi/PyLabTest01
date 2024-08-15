@@ -1,3 +1,4 @@
+
 # This is a basic workflow to help you get started with Actions
 
 name: Push-To-PyLabTest01
@@ -42,6 +43,8 @@ jobs:
             EOF
     - name: Publish documentation
       run: |
+        git config --local user.email "vraomoturi@yahoo.com"
+        git config --local user.name "vraomoturi"
         git add test.txt
         git commit -m "Documentation update"
         git push https://$USERNAME:$REPO_KEY@github.com/vraomoturi/PyLabTest01.git
