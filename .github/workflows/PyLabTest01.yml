@@ -46,7 +46,7 @@ jobs:
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git add test.txt
         git commit -m "Documentation update"
-        git push https://vraomoturi@github.com/vraomoturi/PyLabTest01.get
+        git push https://vraomoturi@github.com/vraomoturi/PyLabTest01.git
       env:
         REPO_KEY: ${{secrets.PUSH_TOKEN}}
         USERNAME: github-actions[bot]
