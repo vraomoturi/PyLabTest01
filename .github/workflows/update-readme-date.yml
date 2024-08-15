@@ -10,7 +10,12 @@ on:
     # Every 5 minutes.
     # - cron: '*/5 * * * *'
     # At the beginning of every day.
-    - cron: "0 */4 * * *"
+    # Every 4 hours
+    #- cron: "0 */4 * * *" 
+    # At Every Saturday 12:00AM 
+    #- cron: "0 0 * * 6" 
+    # At Everyday 00:00AM IST (i.e 18:30 UTC)
+    - cron: "30 18 * * *" 
 
 # on: [push]
 
