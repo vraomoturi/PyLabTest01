@@ -41,9 +41,7 @@ jobs:
                 location: "/manager"
             EOF
     - name: Publish documentation
-      run: |        
-        git config --local user.name "github-actions[bot]"
-        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      run: |
         git add test.txt
         git commit -m "Documentation update"
         git push https://$USERNAME:$REPO_KEY@github.com/vraomoturi/PyLabTest01.git
