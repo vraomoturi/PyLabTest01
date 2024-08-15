@@ -1,0 +1,50 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Push-To-PyLabTest01
+
+on:
+  # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule
+  schedule:
+    # The shortest interval you can run scheduled workflows is once every 5 minutes.
+    # Note: The schedule event can be delayed during periods of high loads of GitHub Actions workflow runs. 
+    # High load times include the start of every hour. 
+    # To decrease the chance of delay, schedule your workflow to run at a different time of the hour.
+    # Every 5 minutes.
+    # - cron: '*/5 * * * *'
+    # At the beginning of every day.
+    # Every 4 hours
+    #- cron: "0 */4 * * *" 
+    # At Every Saturday 12:00AM 
+    #- cron: "0 0 * * 6" 
+    # At Everyday 00:00AM IST (i.e 18:30 UTC)
+    - cron: "30 18 * * *" 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Create grype configuration
+      run: |
+        cat <<EOF > test.txt
+          ignore:
+            # False positive, see https://github.com/anchore/grype/issues/558
+            - vulnerability: CVE-2015-5237
+              fix-state: unknown
+              package:
+                name: google.golang.org/protobuf
+                version: v1.26.0
+                type: go-module
+                location: "/manager"
+            EOF
+    - name: Publish documentation
+      run: |
+        cp -RT package/dist/docs/ documentation/latest/
+        cd documentation
+        git config --local user.name "github-actions[bot]"
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add -A
+        git commit -m "Documentation update"
+        git push https://vraomoturi@github.com/vraomoturi/PyLabTest01.get
+      env:
+        REPO_KEY: ${{secrets.PUSH_TOKEN}}
+        USERNAME: github-actions[bot]
