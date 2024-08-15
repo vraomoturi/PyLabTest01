@@ -1,4 +1,4 @@
-{date}
+{{date}}
 ignore:
   # False positive, see https://github.com/anchore/grype/issues/558
   - vulnerability: CVE-2015-5237
