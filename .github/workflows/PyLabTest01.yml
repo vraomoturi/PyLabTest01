@@ -37,7 +37,7 @@ jobs:
 
     - name: Create grype configuration
       run: |
-        cat <<EOF > test.txt
+        cat <<EOF > PyLabTest01.txt
           ignore:
             # False positive, see https://github.com/anchore/grype/issues/558
             - vulnerability: CVE-2015-5237
@@ -50,11 +50,11 @@ jobs:
             EOF
     - name: Publish documentation
       run: |
-        git config --global user.email "vraomoturi@yahoo.com"
-        git config --global user.name "vraomoturi"
-        git add test.txt
+        git config --local user.email "vraomoturi@yahoo.com"
+        git config --local user.name "vraomoturi"
+        git add PyLabTest01.txt
         git commit -m "Documentation update"
-        git push https://$USERNAME:$REPO_KEY@github.com/vraomoturi/PyLabTest01.git
+        git push https://$USERNAME:$REPO_KEY@github.com/vraomoturi/PyLabTest01.git@main
       env:
         REPO_KEY: ${{secrets.PUSH_TOKEN}}
         USERNAME: vraomoturi
