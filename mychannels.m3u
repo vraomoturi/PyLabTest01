@@ -5,3 +5,30 @@ https://deltatesttatasky.akamaized.net/out/i/968284.m3u8?uid=8004188626&pass=614
 
 #EXTINF:-1 tvg-id="ts923" tvg-name="TravelXP 4K HDR" tvg-language="English" tvg-logo="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-63764-kr1kzw28-v2/imageContent-63764-kr1kzw28-m2.png" group-title="Tataplay🎭Lifestyle" group-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3KVAZoGNNp_XukewD6IpHvCA5G6JaI3FDOad35nhBgIpVIwJUzuJ0wEc" catchup="append" catchup-days="8" catchup-source="&begin={utc}&end={utcend}", TravelXP 4K HDR
 https://deltatesttatasky.akamaized.net/out/i/968284.m3u8
+
+#EXTINF:-1 tvg-id="1145" tvg-name="MTV HD" tvg-language="Hindi" tvg-logo="https://v3img.voot.com/resizeMedium,w_450,h_253/v3Storage/assets/mtv-16x9-1714316345624.jpg" group-title="JioHotstar⭐Music" group-logo="https://img.hotstar.com/image/upload/v1737554969/web-assets/prod/images/rebrand/logo.png", MTV HD
+https://jcevents.hotstar.com/bpk-tv/JC_MTVHD/JCHLS/JC_MTVHD.m3u8|Cookie="hdntl=exp=1761013206~acl=%2f*~id=517628d9e7b1ac9fab2b951b1c5e06b5~data=hdntl~hmac=ebe16281b821bb06959658e88b3a6ffd9e30922625b4b2f27903620c978495f8"&User-Agent="Hotstar;in.startv.hotstar/25.01.27.5.3788 (Android/13)"&Origin="https://www.hotstar.com"&Referer="https://www.hotstar.com/"&X-User-Agent="TiviMate/5.1.6 (Android 15)"
+
+#EXTINF:-1 tvg-id="sony1000009246" tvg-name="SET HD" tvg-language="Hindi" tvg-logo="https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/4_244.png" group-title="SonyLiv🎶Entertainment" group-logo="https://www.sonypicturesnetworks.com/images/logos/Sony_LIV.png", SET HD
+https://sonyliv.joker-verse.workers.dev/master.m3u8?id=1000009246&uid=8004188626&pass=61498d15|User-Agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"&Origin="https://www.sonyliv.com"&Referer="https://www.sonyliv.com/"&X-User-Agent="TiviMate/5.1.6 (Android 15)"
+
+#EXTINF:-1 tvg-id="ts405" tvg-name="MTV Beats HD" tvg-language="Hindi" tvg-logo="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-11607-j9jznhvc-v1/imageContent-11607-j9jznhvc-m1.png" group-title="Tataplay🎭Music" group-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3KVAZoGNNp_XukewD6IpHvCA5G6JaI3FDOad35nhBgIpVIwJUzuJ0wEc" catchup="append" catchup-days="8" catchup-source="&begin={utc}&end={utcend}", MTV Beats HD
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=https://tataplay.jokerverse01.workers.dev/keys.json?id=405&contentId=400000425&uid=8004188626&pass=61498d15
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://tataplay.jokerverse01.workers.dev/manifest.mpd?id=405&uid=8004188626&pass=61498d15|Origin="https://watch.tataplay.com"&Referer="https://watch.tataplay.com/"&User-Agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.69.69.69 YGX/537.36"&X-User-Agent="TiviMate/5.1.6 (Android 15)"
+
+#EXTINF:-1 tvg-id="753" tvg-name="MTV Beats HD" tvg-language="Hindi" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/MTV_Beats_HD.png" group-title="JioTV📺Music" group-logo="https://play-lh.googleusercontent.com/jzbM6msuulcguWO8yfhZb9I0gGXF3gecHY0fULSQkuTDa6PP-b727XZydKgKhKLSPf57=s96-rw", MTV Beats HD
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=https://clearkey.joker-verse.workers.dev/license
+https://jiotv.joker-verse.workers.dev/live/index.mpd?id=753&uid=8004188626&pass=61498d15|User-Agent="plaYtv/7.1.5 (Linux;Android 12) ExoPlayerLib/2.11.7"&Origin="https://www.jiotv.com"&Referer="https://www.jiotv.com/"&X-User-Agent="TiviMate/5.1.6 (Android 15)"
+
+#EXTINF:-1 tvg-name="Star Sports 4K*" tvg-language="english" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_SPORTS_4K/images/LOGO_HD/image.png" group-title="SPORTS", Star Sports 4K*
+#KODIPROP:inputstream.adaptive.manifest_type=m3u8
+https://joker-verse.vercel.app/opplex/live/390407.m3u8?uid=8004188626&pass=61498d15|user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"&X-User-Agent="TiviMate/5.1.6 (Android 15)"
+
+#EXTINF:-1 tvg-id="143243" tvg-name="SET HD (sundirectgo)" tvg-language="Hindi" tvg-logo="https://metaimg.sundirectgo.in/143243/250x250_SETHD_143243_c103fc2f-e893-4879-a1d6-0fc9248dfcc8.png" group-title="SonyLiv🎶Entertainment" group-logo="https://www.sonypicturesnetworks.com/images/logos/Sony_LIV.png", SET HD (sundirectgo)
+#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
+#KODIPROP:inputstream.adaptive.license_key=https://sundirectgo.joker-verse.workers.dev/widevine?uid=8004188626&pass=61498d15
+#EXTVLCOPT:http-user-agent=stagefright/1.2 (Linux;Android 11)
+https://sundirectgo.joker-verse.workers.dev/joker.mpd?id=hd517&uid=8004188626&pass=61498d15
